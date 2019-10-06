@@ -15,7 +15,7 @@ Give examples
 
 ### Data Preprocessing and Analysis Part
 
-Our raw data is in fodler sitaiqu including the usage[kilowatt_everyday_2year.xlsx](https://github.com/minoriwww/MeterDetection/blob/master/sitaiqu/kilowatt_everyday_2year.xlsx), the current[electriccurrent_hours_2year.xlsx](https://github.com/minoriwww/MeterDetection/blob/master/sitaiqu/electriccurrent_hours_2year.xlsx) and the voltage[voltage_hours_2year.xlsx](https://github.com/minoriwww/MeterDetection/blob/master/sitaiqu/voltage_hours_2year.xlsx).
+Our raw data is in fodler sitaiqu including the usage([kilowatt_everyday_2year.xlsx](https://github.com/minoriwww/MeterDetection/blob/master/sitaiqu/kilowatt_everyday_2year.xlsx)), the current([electriccurrent_hours_2year.xlsx](https://github.com/minoriwww/MeterDetection/blob/master/sitaiqu/electriccurrent_hours_2year.xlsx)) and the voltage([voltage_hours_2year.xlsx](https://github.com/minoriwww/MeterDetection/blob/master/sitaiqu/voltage_hours_2year.xlsx)).
 
 Data processing is accomplished in [data_processing0.py](https://github.com/minoriwww/MeterDetection/blob/master/data_processing0.py)
 
@@ -34,7 +34,7 @@ The detection task is finished in [check.py](https://github.com/minoriwww/MeterD
 
 ### Malfunctional Submeter Classification Task
 
-We generated our data in [samples.py](https://github.com/minoriwww/MeterDetection/blob/master/samples.py), which imported [single_bomb_wave.py](https://github.com/minoriwww/MeterDetection/blob/master/single_bomb_wave.py) and (single_input_wave.py)[https://github.com/minoriwww/MeterDetection/blob/master/single_input_wave.py].
+We generated our data in [samples.py](https://github.com/minoriwww/MeterDetection/blob/master/samples.py), which imported [single_bomb_wave.py](https://github.com/minoriwww/MeterDetection/blob/master/single_bomb_wave.py) and [single_input_wave.py](https://github.com/minoriwww/MeterDetection/blob/master/single_input_wave.py).
 
 The classification task is accomplished in [combine_model.py](https://github.com/minoriwww/MeterDetection/blob/master/combine_model.py).
 
