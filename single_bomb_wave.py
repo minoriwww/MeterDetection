@@ -9,7 +9,12 @@ import math
 import single_input_wave as si
 from scipy.spatial.distance import pdist, squareform
 DATE='2015/08/01'
-DATA_PATH = "sitaiqu/samples_image2/"
+DATA_PATH = "sitaiqu/samples_image/"
+import os
+if not os.path.isdir(DATA_PATH):
+    os.makedirs(DATA_PATH)
+
+
 filename = dp.DATA_PATH+'/single_input.csv'
 
 def rec_plot(s, eps=None, steps=None):
@@ -65,7 +70,7 @@ def single_bomb(id,filename = filename, date = DATE,wat=None):
     plt.yticks([])
     plt.axis('off')
     plt.savefig(DATA_PATH + str(id) + "single_bomb.png",dpi=300)
-    d.to_csv(path_or_buf=dp.DATA_PATH + "/samples2/" + str(id) + "single_bomb.csv", encoding="utf-8",index=False)
+    d.to_csv(path_or_buf=dp.DATA_PATH + "/samples/" + str(id) + "single_bomb.csv", encoding="utf-8",index=False)
 
 if __name__ == '__main__':
     single_bomb(id=1504523749)
