@@ -13,6 +13,8 @@ DATA_PATH = "sitaiqu/samples_image/"
 import os
 if not os.path.isdir(DATA_PATH):
     os.makedirs(DATA_PATH)
+if not os.path.isdir("sitaiqu/samples/"):
+    os.makedirs("sitaiqu/samples/")
 
 
 filename = dp.DATA_PATH+'/single_input.csv'
