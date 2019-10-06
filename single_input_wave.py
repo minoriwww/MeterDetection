@@ -9,7 +9,16 @@ import math
 
 from scipy.spatial.distance import pdist, squareform
 
-DATA_PATH = "sitaiqu/samples_image2/"
+DATA_PATH = "sitaiqu/samples_image/"
+
+import os
+if not os.path.isdir(DATA_PATH):
+    os.makedirs(DATA_PATH)
+
+if not os.path.isdir("sitaiqu/samples/"):
+    os.makedirs("sitaiqu/samples/")
+
+
 begin = "2014/08/01"
 end = "2016/08/01"
 ID=1504523749
@@ -52,7 +61,7 @@ def single_input(id=ID, DATA_PATH = DATA_PATH, begin = begin, end = end,mode=0, 
     plt.axis('off')
     if mode ==0 :
         plt.savefig(DATA_PATH+str(id)+"single_input.png",dpi=300)
-        res.to_csv(path_or_buf="sitaiqu/samples2/" + str(id) + "single_input.csv",encoding="utf-8", index=False)
+        res.to_csv(path_or_buf="sitaiqu/samples/" + str(id) + "single_input.csv",encoding="utf-8", index=False)
     return res
 
 
