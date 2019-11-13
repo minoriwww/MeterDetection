@@ -32,12 +32,13 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 ```
-Give examples
+Keras=2.2
+tensorflow=1.9
 ```
 
 ## Explanations for each file
 
-### Data Preprocessing and Analysis Part
+### Data
 
 Our raw data is in fodler sitaiqu including the usage([kilowatt_everyday_2year.xlsx](https://github.com/minoriwww/MeterDetection/blob/master/sitaiqu/kilowatt_everyday_2year.xlsx)), the current([electriccurrent_hours_2year.xlsx](https://github.com/minoriwww/MeterDetection/blob/master/sitaiqu/electriccurrent_hours_2year.xlsx)) and the voltage([voltage_hours_2year.xlsx](https://github.com/minoriwww/MeterDetection/blob/master/sitaiqu/voltage_hours_2year.xlsx)).
 
